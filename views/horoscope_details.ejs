@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <title>
+        <%=locals.title %>
+    </title>
+</head>
+
+<body>
+    <%-include('header') %>
+        <h1 class="display-5 text-center mb-5 mt-2">YOUR ASTRO!</h1>
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col">
+                    <ul class="list-group">
+                        <li class="list-group-item active" aria-current="true">BIRTH DETAILS</li>
+                        <li class="list-group-item"><b>Year:</b> <%= locals.birth.year%> </li>
+                        <li class="list-group-item"><b>Month:</b> <%= locals.birth.month%></li>
+                        <li class="list-group-item"><b>Day:</b> <%= locals.birth.day%> </li>
+                        <li class="list-group-item"><b>Hour:</b> <%= locals.birth.hour%> </li>
+                        <li class="list-group-item"><b>Minute:</b> <%= locals.birth.minute%> </li>
+                        <li class="list-group-item"><b>Latitude:</b> <%= locals.birth.latitude%> </li>
+                        <li class="list-group-item"><b>Longitude:</b> <%= locals.birth.longitude%> </li>
+                        <li class="list-group-item"><b>Time Zone:</b> <%= locals.birth.timezone%> </li>
+                        <li class="list-group-item"><b>Sunrise:</b> <%= locals.birth.sunrise%> </li>
+                        <li class="list-group-item"><b>Sunset:</b> <%= locals.birth.sunset%> </li>
+                        <li class="list-group-item"><b>Ayanamsha:</b> <%= locals.birth.ayanamsha%> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ul class="list-group">
+                        <li class="list-group-item active" aria-current="true">ASTRO DETAILS</li>
+                        <li class="list-group-item">Ascendant: <b><%= locals.astro.ascendant%></b></li>
+                        <li class="list-group-item">Varna: <b><%= locals.astro.Varna%></b></li>
+                        <li class="list-group-item">Vashya: <b><%= locals.astro.Vashya%></b></li>
+                        <li class="list-group-item">Yoni: <b><%= locals.astro.Yoni%></b> </li>
+                        <li class="list-group-item">Gan: <b><%= locals.astro.Gan%></b></li>
+                        <li class="list-group-item">Nadi: <b><%= locals.astro.Nadi%></b></li>
+                        <li class="list-group-item">SignLord: <b><%= locals.astro.SignLord%></b></li>
+                        <li class="list-group-item">Sign: <b><%= locals.astro.sign%></b></li>
+                        <li class="list-group-item">Naksahtra: <b><%= locals.astro.Naksahtra%></b></li>
+                        <li class="list-group-item">NaksahtraLord: <b><%= locals.astro.NaksahtraLord%></b></li>
+                        <li class="list-group-item">Charan: <b><%= locals.astro.Charan%></b></li>
+                        <li class="list-group-item">Yog: <b><%= locals.astro.Yog%></b></li>
+                        <li class="list-group-item">Karan:<b><%= locals.astro.Karan%></b></li>
+                        <li class="list-group-item">Tithi: <b><%= locals.astro.Tithi%></b></li>
+                        <li class="list-group-item">Yunja: <b><%= locals.astro.yunja%></b></li>
+                        <li class="list-group-item">Tatva: <b><%= locals.astro.tatva%></b></li>
+                        <li class="list-group-item">Name alphabet: <b><%= locals.astro.name_alphabet%></b></li>
+                        <li class="list-group-item">Paya: <b><%= locals.astro.paya%></b></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <H3 class="text-center m-2">BASIC GEM SUGGESTIONS</H3>
+                </div>
+            </div>
+            <div class="row">
+                <p class="text-center"><%=locals.gem.msg %></p>
+            </div>
+        </div>
+        <script src="/script/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
