@@ -14,4 +14,4 @@ npm install <br>
 node index.js
 
 ## Hosted URL
-coming soon...
+https://guruji-astro.herokuapp.com/
