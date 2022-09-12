@@ -32,7 +32,7 @@ module.exports.horoscope_details = async function (req, res) {
              'Content-Type': 'application/json' }
     });
     const gem_output = await response3.json();
-    //console.log(gem_output);
+    //console.log(astro_output);
     res.render('horoscope_details', {
         title: "ASTRO",
         birth:birth_output,

@@ -3,7 +3,6 @@ require('dotenv').config();
 const app=express();
 app.use(express.urlencoded({ extended: false }));
 const path=require('path');
-const db=require('./config/mongoose');
 const port=8000;
 app.use(express.static('assets'));
 app.set('view engine','ejs');
